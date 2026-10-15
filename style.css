@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: burlywood;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 45px;
+    font-family: cursive;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.rock, .paper, .scissors {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    padding: 50px 50px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.rock{
+    background-image: url('./image/rock.jpg') ;
+}
+
+.paper {
+   background-image: url('./image/paper.png') ;
+}
+
+.scissors {
+   background-image: url('./image/scissors.png') ;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    perspective: 1000px;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.card.flipped .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back1, .card-back2, .card-back3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    backface-visibility: hidden;
+}
+
+.card-front {
+    background-image: url('image/rpss.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.card-front img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.card-back1 {
+    background-image: url('./image/rock.jpg') ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotateY(180deg);
+}
+
+.card-back2 {
+    background-image: url('./image/paper.png') ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotateY(180deg);
+}
+
+.card-back3 {
+    background-image: url('./image/scissors.png') ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotateY(180deg);
+}
