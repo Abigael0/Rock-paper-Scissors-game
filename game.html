@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, paper, Scissors</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+<h1>Let's Play!</h1>
+
+
+ <section>
+ <!-- Rock card -->
+<button class="rock card" onclick="playGame('rock', this)">
+    <div class="card-inner">
+        <div class="card-front">
+            <img src="image/rpss.png" alt="Rock Paper Scissors">
+            <h3>Click Me</h3>
+        </div>
+        <div class="card-back1"></div>
+    </div>
+</button>
+
+<!-- Paper card -->
+<button class="paper card" onclick="playGame('paper', this)">
+    <div class="card-inner">
+        <div class="card-front">
+            <img src="image/rpss.png" alt="Rock Paper Scissors">
+            <h3>Click Me</h3>
+        </div>
+        <div class="card-back2"></div>
+    </div>
+</button>
+
+<!-- Scissors card -->
+<button class="scissors card" onclick="playGame('scissors', this)">
+    <div class="card-inner">
+        <div class="card-front">
+            <img src="image/rpss.png" alt="Rock Paper Scissors">
+            <h3>Click Me</h3>
+        </div>
+        <div class="card-back3"></div>
+    </div>
+</button>
+</section>
+
+
+
+<script src="game.js"></script>
+</body>
+</html>
